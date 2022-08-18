@@ -23,7 +23,7 @@ export default function HomePage({ events }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(
     // `${API_URL}/events?sort=date:asc&pagination[limit]=3`
     `${API_URL}/events?_limit=3&_sort=date:DESC`
@@ -32,6 +32,18 @@ export async function getStaticProps() {
 
   return {
     props: { events: events },
-    revalidate: 1,
   };
+}
+
+// export async function getStaticProps() {
+//   const res = await fetch(
+//     // `${API_URL}/events?sort=date:asc&pagination[limit]=3`
+//     `${API_URL}/events?_limit=3&_sort=date:DESC`
+//   );
+//   const events = await res.json();
+
+//   return {
+//     props: { events: events },
+//     revalidate: 1,
+//   };
 }

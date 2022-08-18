@@ -15,7 +15,6 @@ import ImageUpload from "@/components/ImageUpload";
 import { parseCookies } from "@/helpers/index";
 
 export default function EditEventPage({ event, token }) {
-  console.log(token);
   const [values, setValues] = useState({
     name: "",
     performers: "",

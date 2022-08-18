@@ -10,7 +10,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import React from "react";
 import moment from "moment";
-// import Modal from "@/components/Modal";
+import Modal from "@/components/Modal";
 import ImageUpload from "@/components/ImageUpload";
 import { parseCookies } from "@/helpers/index";
 

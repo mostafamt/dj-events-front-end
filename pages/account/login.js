@@ -36,6 +36,7 @@ function LoginPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
+            <p>test@test.com</p>
           </div>
           <div>
             <label htmlFor="password">Password</label>
@@ -45,6 +46,7 @@ function LoginPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
+            <p>test</p>
           </div>
 
           <input type="submit" value="Login" className="btn" />
